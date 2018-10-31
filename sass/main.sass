@@ -1,0 +1,61 @@
+$primary-color:  #333
+$font-stack:  Helvetika, sans-serif
+body
+    font: 100% $font-stack
+    color: $primary-color
+
+/* вложение */
+#main p
+    color: #777
+    font-size: 16px
+
+    .redbox
+        background: red
+
+#main
+    width: 97%
+
+    p, div
+        font-size: 22px
+
+        a
+            font-size: 16px
+
+            /* использование амперсанда */
+            &:hover
+                font-weight: bold
+    
+    &-sidebar
+        width: 30%
+
+/* Разбитие свойств на вложение */
+.selector
+    margin
+        top: 10px
+        left: 0
+        right: 0
+        bottom: 15px
+
+
+/* Селекторы шаблона */
+%itembase
+    color: #555
+    font-size: 14px
+    line-height: 14px
+
+.base-one-item
+    @extend %itembase
+    margin-top: 10px
+
+.base-two-item
+    @extend %itembase
+    margin-top: 30px
+
+/* Интерполяция */
+$in: Интер
+
+.interpolar
+    content: "#{$in}поляция"
+
+/* import */
+@import "part.scss"
