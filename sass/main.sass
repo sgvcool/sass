@@ -59,3 +59,47 @@ $in: Интер
 
 /* import */
 @import "part.scss"
+
+
+/* условия */
+$var: 6
+.selector
+    @if $var < 5
+        content: '5'
+    @else if $var > 5
+        content: '10'
+    @else
+        content: '20' 
+
+/* счетчики */
+@for $i from 1 to 11
+    .item-#{$i}
+        background-image: url('image#{$i}')
+
+/* директива @each */
+@each $name in header,content,block,text,slider,footer
+    .section-#{$name}
+        background: url('image-#{$name}.jpg')
+
+/* директива @while */
+$i: 7
+@while $i > 0
+    .item-#{$i}
+        width: 10 * $i
+    $i: $i - 3
+
+/* директива @mixin */
+@mixin border($color)
+    border: 1px solid $color
+
+p    
+    @include border(#333) 
+
+@mixin transition($time)
+    -webkit-transition: all $time easy;
+    -o-transition: all $time easy;
+    -moz-transition: all $time easy;
+    transition: all $time easy;
+
+p
+    @include transition(3s)    

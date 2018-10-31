@@ -67,3 +67,99 @@ body {
 .bg {
   background: #777;
 }
+
+/* условия */
+.selector {
+  content: '10';
+}
+
+/* счетчики */
+.item-1 {
+  background-image: url("image1");
+}
+
+.item-2 {
+  background-image: url("image2");
+}
+
+.item-3 {
+  background-image: url("image3");
+}
+
+.item-4 {
+  background-image: url("image4");
+}
+
+.item-5 {
+  background-image: url("image5");
+}
+
+.item-6 {
+  background-image: url("image6");
+}
+
+.item-7 {
+  background-image: url("image7");
+}
+
+.item-8 {
+  background-image: url("image8");
+}
+
+.item-9 {
+  background-image: url("image9");
+}
+
+.item-10 {
+  background-image: url("image10");
+}
+
+/* директива @each */
+.section-header {
+  background: url("image-header.jpg");
+}
+
+.section-content {
+  background: url("image-content.jpg");
+}
+
+.section-block {
+  background: url("image-block.jpg");
+}
+
+.section-text {
+  background: url("image-text.jpg");
+}
+
+.section-slider {
+  background: url("image-slider.jpg");
+}
+
+.section-footer {
+  background: url("image-footer.jpg");
+}
+
+/* директива @while */
+.item-7 {
+  width: 70;
+}
+
+.item-4 {
+  width: 40;
+}
+
+.item-1 {
+  width: 10;
+}
+
+/* директива @mixin */
+p {
+  border: 1px solid #333;
+}
+
+p {
+  -webkit-transition: all 3s easy;
+  -o-transition: all 3s easy;
+  -moz-transition: all 3s easy;
+  transition: all 3s easy;
+}
